@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- 
+    tables
+    block inline 
+    div span
+    semantics
+    internal routing
+    deploy
+    -->
+
+    <nav>
+        <a href="#table">table</a>
+        <a href="#divspan">div&span</a>
+        <a href="#iframes">iframes</a>
+    </nav>
+    <table id="table" border="1" cellpadding="10">
+        <tr>
+            <td rowspan="2"  colspan="2" >name</td>
+            <td >id</td>
+            <td rowspan="2" >city</td>
+        </tr>
+        <tr>
+            <td>john</td>
+            <!-- <td>1</td> -->
+            <!-- <td>vizag</td> -->
+        </tr>
+        <tr>
+            <td>john</td>
+            <td>1</td>
+            <td colspan="2">vizag</td>
+        </tr>
+    </table>
+
+    <!-- 
+    
+    tags are divided based on the behaviour
+    1) block levvel elements
+    block level elements are the elements which occupies total space  and always starts on a new line
+
+    ex:div, heading, p, table,ul,li
+    2) inline elements
+    inline elements are the elements which occupies neccessary space  and always doesnot starts on new line
+    ex
+    span,a,img, 
+    
+
+    div- division container
+    it is used to group the elements for applying styles
+    
+    span
+    it is used to group the text for applying styles
+    -->
+
+    <!-- <h1>heading1</h1> <h1>codegnan</h1>
+    <a href="">home</a>
+    <a href="">about</a> 
+    
+    
+    
+    semantic tags
+    are the tags which conveys the meaning to the browser  and developer 
+    header,nav,footer,main,article,aside,section ,figure
+    
+    iframes
+    it is used to embed the another page into current page 
+
+    -->
+
+
+
+    <div id="divspan" style="background:lightcoral">
+        <h1>section <span style="color:blue;font-size: 3rem;">1</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error repudiandae ducimus hic maiores, voluptatibus voluptate architecto reprehenderit dolores eos incidunt non cum, perferendis eveniet sint amet necessitatibus? Earum, quae!</p>
+    </div>
+    
+    <div style="background: lightseagreen;">
+        <h1>section2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error repudiandae ducimus hic maiores, voluptatibus voluptate architecto reprehenderit dolores eos incidunt non cum, perferendis eveniet sint amet necessitatibus? Earum, quae!</p>
+    </div>
+    
+    <div>
+        <h1>section3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa error repudiandae ducimus hic maiores, voluptatibus voluptate architecto reprehenderit dolores eos incidunt non cum, perferendis eveniet sint amet necessitatibus? Earum, quae!</p>
+    </div>
+
+    <header>content</header>
+    <aside>content</aside>
+    <section>content</section>
+    <div>content</div>
+    <div>content</div>
+    <footer>content</footer>
+
+<iframe id="iframes" width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=omZvccQr9bRAbEo6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83572.07213264104!2d83.31343138903527!3d17.743423752546594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395af936ec1537%3A0xf531a507459cc11d!2sRK%20Beach!5e0!3m2!1sen!2sin!4v1795240807342!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</body>
+</html>
