@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        css - cascading style sheet 
+            flowing - a document that contains styles
+        css is styling language that is used to describe the presentation of the webpage
+        it deals with colors,backgrounds,fonts,transitions,animations and responsiveness
+        
+        how to insert css
+        1) inline css
+           styles are emebed within the tag using style attribute
+           <h1 style='color:red;background:blue;'>heading 1</h1>
+        
+        2) internal css
+          styles are embeded in the document head section using style tag
+          
+          selector
+          it is used to target the html elements for applying styles
+        
+            selector{
+            propertyname:value;
+            propertyname:value;
+            declration
+            }
+            
+        <style>
+            h2{
+            color:blue;
+            }
+          </style>
+        
+        3) external css
+        styles are embeded in another file which has a .css extension
+        can be linked using link tag
+        demo.css
+        h3{
+        color:orange;
+        }
+        
+        <link rel='stylesheet' href='demo.css'>
+        
+        
+        specificity 
+        1) inline css having high priority
+        2) it depends -internal & external
+        
+        types of selectors
+        1) simple selecctors
+        a) tagname selector or element selector
+           used to target the html based on a tagname
+           h1{
+           color:red;
+           }
+        b) class selector
+            it is denoted by .
+            it is used to apply styles for multiple tags
+            we can define mutiple class name within the same tag
+        c) id seleccttor
+           it is denoted by #
+           it is used to apply styles uniquely
+
+        2) combinators
+        3) pseudo clss
+        4) pseduo element
+
+        specificity
+        1) id 
+        2) class
+        3) tagname
+
+        boxmodel
+        it defines the presentation of a element
+        it consists four things
+        1) content
+           width:200px or 50%;
+           height:300pxl
+        2) padding- it is the space inside of an element
+           padding:10px;
+           padding:5px 10px 15px 20px;
+           padding: 5px 10px 20px;
+                   top   l/r bottom
+           padding:10px 20px;
+                   t/b  l/r
+        3) border- it is the line around the element
+            border: 2px solid red;
+                  widht style color;
+            style
+            solid
+            dotted
+            dashed
+            double
+            ridge
+            groove
+
+        4) margin
+        -->
+    <link rel="stylesheet" href="demo.css">
+
+    <style>
+   
+        .fe {
+            background: lightsalmon;
+            color: blue;
+        }
+        .be {
+            background: lightseagreen;
+            color: white;
+        }
+        .programs {
+            color: violet;
+        }
+        #el1{
+            color:green;
+        }
+        #el2{
+            color:red;
+        }
+        div{
+            color:brown;
+        }
+        .box{
+            background:lightseagreen;
+            width:200px;
+            height:150px;
+            padding:20px;
+            padding:10px 20px 30px 40px;
+            padding:10px 20px  40px;
+            padding:10px   40px;
+            border:5px solid red;
+            border:5px dotted red;
+            border:5px dashed red;
+            border:5px double red;
+            border:5px ridge red;
+            border:5px groove red;
+            border-radius:50%;
+            border-radius:20px;
+            margin:20px;
+            margin:10px 20px 30px 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">box1</div>
+    <div class="box">box1 </div>
+    <div >skills</div>
+    <h1 id="el1">frontend tech</h1>
+    <p class="fe">html</p>
+    <div class="fe">css</div>
+    <p class="fe programs">js</p>
+
+    <h1 id="el2">backend tech</h1>
+    <div class="be programs"> python</div>
+    <div class="be"> fastapi</div>
+    <div class="be"> django</div>
+
+
+
+</body>
+
+</html>
