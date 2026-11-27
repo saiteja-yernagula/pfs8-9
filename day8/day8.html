@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html{
+            font-size: 20px;
+        }
+        div{
+            background:yellow;
+            width:100vw;
+            height:200vh;
+        }
+        p{
+            background:blue;
+            width:100vw;
+            height:50%;
+        }
+        body{
+            width:50%;
+
+        }
+
+        
+        absolutre units- fixed units
+        cm
+        mm
+        m
+        inch
+        px
+
+        relative units
+        1) percentages - it will always depends on the parent
+           width, margin ,padding,
+        2) viewport
+           it will always depends on viewport screen
+           width:100vw; 
+           height:100vh;
+         3) rem- fontsizes
+         1rem
+         2rem
+
+         default - 16px
+
+         1rem= 1*16
+         2rem =2*16
+
+         flexbox 
+         it is a one dimensional layout model that is used to create simple 
+         layouts
+
+         flex-container(parent properties)
+         1) display:flex;
+         it will create the flex container and change the flexitems direcion into the row
+
+         2) flex-direction
+         flex-direction:row;
+         flex-direction:row-reverse;
+         flex-direction:column; ---by default
+         flex-direction:column-reverse;
+
+         3) gap- it creates the space between the rows and columns
+         gap:20px;
+
+         4) justify-content
+         it control the alignment of child items on main axis
+          justify-content:center;
+         justify-content:end;
+         justify-content:start;----by default
+         justify-content:space-evenly;
+         justify-content:space-between;
+         justify-content:space-around;
+
+            5) align-items
+            it controls the alignment of child items on cross axis
+          align-items:stretch;---by default
+         align-items:start;
+         align-items:end;
+         align-items:center;
+
+
+         6) flex-wrap:wrap;
+         it will wrap the items to the next line
+         
+         7)
+           flex-wrap:wrap;
+         flex-wrap:wrap-reverse;
+
+         8)align-content
+           it controls the alignment of child items on cross axis when there is a more than 1 row
+
+  align-content:center;
+         align-content:end;
+         align-content:start;
+         align-content:space-between;
+         align-content:space-around;
+         align-content:space-evenly ;
+
+         9)
+         flex-flow:wrap row-reverse;
+
+       
+            flex-items(child properties)
+
+            1) flex-basis
+            it controls the initial lenght of an item
+            .child{
+            flex-basis:25%;}
+        */
+
+        .parent{
+            background:lightpink;
+            display:flex;
+         flex-direction:row-reverse;
+         flex-direction:column;
+         flex-direction:column-reverse;
+         flex-direction:row;
+         gap:20px;
+         justify-content:center;
+         justify-content:end;
+         justify-content:start;
+         justify-content:space-evenly;
+         justify-content:space-between;
+         justify-content:space-around;
+         height:100vh;
+         align-items:stretch;
+         align-items:start;
+         align-items:end;
+         align-items:center;
+         flex-wrap:wrap;
+         flex-wrap:wrap-reverse;
+         align-content:center;
+         align-content:end;
+         align-content:start;
+         align-content:space-between;
+         align-content:space-around;
+         align-content:space-evenly ;
+         flex-flow:wrap row-reverse;
+
+        
+        }
+        .child{
+            background:darkred;
+            padding:20px;
+           
+            flex-basis:25%;
+
+        }
+        header{
+            background:lightblue;
+            padding:20px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+        section{
+            height:100vh;
+            background: lightseagreen;
+            padding:30px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+            </style>
+</head>
+<body>
+    <header>
+        <h1>company name</h1>
+        <nav>
+            <button>home</button>
+            <button>about</button>
+            <button>services</button>
+        </nav>
+    </header>
+
+    <section>
+       <div>
+        <h1>Title</h1>
+        <p>Lorem ipsum, dolor sit amet </p>
+       </div>    
+    </section>
+
+
+
+
+    <div class="parent">
+        <div class="child" >Html</div>
+        <div class="child">Css</div>
+        <div class="child">js</div>
+        <div class="child">React</div>
+             <div class="child">Html</div>
+        <div class="child">Css</div>
+        <div class="child">js</div>
+        <div class="child">React</div>
+             <div class="child">python</div>
+        <div class="child">Css</div>
+        <div class="child">js</div>
+        <div class="child">React</div>
+             <div class="child">Html</div>
+        <div class="child">Css</div>
+        <div class="child">js</div>
+        <div class="child">React</div>
+        <div style="order:-10">fastapi</div>
+    </div>
+</body>
+</html>
